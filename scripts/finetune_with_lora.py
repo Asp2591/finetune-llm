@@ -25,7 +25,7 @@ api = KaggleApi()
 api.authenticate()
 
 # Define the dataset name and path to save it
-dataset_name = "varshitanalluri/crop-recommendation-dataset"
+dataset_name = "varshitanalluri/Crop-recommendation-dataset"
 dataset_path = "crop-recommendation-dataset"
 
 # Download and unzip the dataset
@@ -36,7 +36,7 @@ print("Path to dataset files:", os.path.abspath(dataset_path))
 from datasets import load_dataset
 
 # Load your custom data into a Hugging Face dataset format
-dataset = load_dataset('csv', data_files={'train': os.path.join(dataset_path, 'crop_recommendation.csv')})
+dataset = load_dataset('csv', data_files={'train': os.path.join(dataset_path, 'Crop_recommendation.csv')})
 
 # Step 6: Load the Pretrained Model
 from transformers import AutoModelForCausalLM, AutoTokenizer
