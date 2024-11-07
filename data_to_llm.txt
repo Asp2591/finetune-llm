@@ -1,0 +1,12 @@
+project-directory/
+├── dataset/
+│   └── crop-recommendation-dataset/        # Directory for downloaded dataset files
+│       └── crop_recommendation.csv         # The downloaded CSV file from Kaggle
+├── models/
+│   └── finetuned-model/                    # Directory to save the fine-tuned model and tokenizer
+├── scripts/
+│   └── finetune_with_lora.py               # Main script for fine-tuning with LoRA
+├── logs/                                   # Logs for training output
+│   └── ...                                 # (Automatically created by Trainer)
+├── kaggle.json                             # Kaggle API key (keep this in ~/.kaggle for security)
+└── requirements.txt                        # List of dependencies (transformers, peft, etc.)
